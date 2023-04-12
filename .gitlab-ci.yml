@@ -1,0 +1,10 @@
+test:
+  script:
+    - echo "test"
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - main
+  cache:
+    paths:
+      - .npm/
