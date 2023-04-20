@@ -25,6 +25,10 @@ down:
 	@docker image prune -f
 	@make clean
 
+.PHONY: restart 
+	@make up
+	@make down
+
 .PHONY: clean
 clean:
 	@rm -rf ./gitlab/config && mkdir ./gitlab/config

@@ -17,6 +17,7 @@ services:
       - './gitlab/logs:/var/log/gitlab'
       - './gitlab/data:/var/opt/gitlab'
     shm_size: '256m'
+
   # runner:
   #   build: runner
   #   container_name: dk-gitlab-runner
